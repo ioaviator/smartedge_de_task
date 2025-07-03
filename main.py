@@ -1,15 +1,15 @@
-import logging
+import argparse
 
-# configure logging 
-logging.basicConfig(
-    filename='data_quality_logs.log',
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+from load_data import load_data
 
-def main():
-  ...
+
+def main(filepath):
+  df = load_data(filepath)
   
 
 if __name__ == "__main__":
-  main()
+  parser = argparse.ArgumentParser(description="Data Quality Checker")
+  parser.add_argument('--file', required=True, help="Path to CSV or JSON file")
+  args = parser.parse_args()
+
+  main(args.file)
