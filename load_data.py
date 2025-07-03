@@ -3,10 +3,8 @@ import sys
 
 import pandas as pd
 
-from config import logger
 
-
-def load_data(file_path):
+def load_data(file_path, logger):
     if not os.path.exists(file_path):
       logger.error(f"File not found: {file_path}")
       sys.exit(f"Error: File not found -> {file_path}")

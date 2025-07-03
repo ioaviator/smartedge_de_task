@@ -1,10 +1,15 @@
 import argparse
 
+from check_null import check_nulls
+from config import logger
 from load_data import load_data
 
 
 def main(filepath):
-  df = load_data(filepath)
+  df = load_data(filepath, logger)
+  df = check_nulls(df, logger)
+
+  return None
   
 
 if __name__ == "__main__":
