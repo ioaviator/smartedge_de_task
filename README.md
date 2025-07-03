@@ -1,4 +1,4 @@
-## SmartEdge_Data Engineering Task
+## SmartEdge Data Engineering Task
 This repository contains SmartEdge data engineering task. The aim of this task is to access the candidate on their knowledge of maintaining code data quality and data integrity.
 
 ## Tools Used
