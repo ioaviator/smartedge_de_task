@@ -1,5 +1,16 @@
 
-def check_nulls(df,logger):
+def check_nulls(df, logger) -> dict[str, int]:
+    """
+    Check for null values in the DataFrame.
+
+    Args:
+        df (pd.DataFrame): The DataFrame to check for nulls.
+        logger (Logger): Logger for logging messages.
+
+    Returns:
+        dict[str, int]: Columns with count of null values.
+    """
+
     null_values = df.isnull().sum()
     # print(null_values.items())
     null_report = {col: count 

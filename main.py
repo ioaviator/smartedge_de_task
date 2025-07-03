@@ -6,7 +6,18 @@ from src.load_data import load_data
 from utils.config import logger
 
 
-def main(filepath):
+def main(filepath: str) -> None:
+  """
+    Main function that performs data quality checks and 
+    prints results to console
+
+    Args:
+        filepath (str): Path to the dataset file.
+
+    Returns:
+        None
+  """
+    
   df = load_data(filepath, logger)
   nulls = check_nulls(df, logger)
   data_type = check_data_types(df, logger)
