@@ -64,7 +64,7 @@ logger = logging.getLogger(__name__)
 ```
 
 ## Testing
-Naviagte to test folder: \
+Navigate to test folder: \
 `cd test`
 
 Run Test: \
