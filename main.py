@@ -1,9 +1,9 @@
 import argparse
 
-from check_data_type import check_data_types
-from check_null import check_nulls
 from config import logger
-from load_data import load_data
+from src.check_data_type import check_data_types
+from src.check_null import check_nulls
+from src.load_data import load_data
 
 
 def main(filepath):
